@@ -1,0 +1,18 @@
+<app-holiday-header></app-holiday-header>
+
+<ion-content>
+  <main class="holidays-by-country-page">
+    <h1>{{ selectedCountry.name }} - {{ currentYear }}</h1>
+
+    <ion-list *ngIf="holidays.length; else isLoadingHolidays">
+      <ion-item *ngFor="let holiday of holidays">
+        <app-holiday-card [holiday]="holiday"></app-holiday-card>
+      </ion-item>
+    </ion-list>
+
+    <ng-template #isLoadingHolidays>
+      <app-spinner-load></app-spinner-load>
+    </ng-template>
+
+  </main>
+</ion-content>

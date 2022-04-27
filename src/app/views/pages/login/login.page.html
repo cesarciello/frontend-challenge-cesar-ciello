@@ -1,0 +1,24 @@
+<ion-content>
+  <main class="login-page">
+    <h1>The Holiday by country app</h1>
+
+    <div class="login-form-wrap">
+      <ion-card>
+        <h3>Login to your account:</h3>
+        <form [formGroup]="loginForm" (ngSubmit)="submit()" novalidate>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+
+          <ion-button [disabled]="!loginForm.valid" type="submit">Sign in</ion-button>
+        </form>
+      </ion-card>
+    </div>
+  </main>
+</ion-content>

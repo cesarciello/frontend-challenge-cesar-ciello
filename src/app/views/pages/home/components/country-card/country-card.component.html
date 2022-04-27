@@ -1,0 +1,9 @@
+<ion-card (click)="navigateToHolidays(country)">
+  <div class="image-wrap">
+    <img [src]="country.image" alt="" srcset="">
+  </div>
+  <ion-card-header>
+    <ion-card-subtitle>{{ country.code }}</ion-card-subtitle>
+    <ion-card-title>{{ country.name }}</ion-card-title>
+  </ion-card-header>
+</ion-card>

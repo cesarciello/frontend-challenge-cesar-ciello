@@ -1,0 +1,17 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>{{ holiday.date | date }}</ion-card-subtitle>
+    <ion-card-title>{{ holiday.name }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <h4>Local name: <b> {{ holiday.localName }} </b></h4>
+    <!-- <div *ngIf="holiday.regions.length" class="regions-list">
+        <h4>Regions code:</h4>
+        <ul>
+          <li *ngFor="let region of holiday.regions">
+            <p>{{ region }}</p>
+          </li>
+        </ul>
+      </div> -->
+  </ion-card-content>
+</ion-card>

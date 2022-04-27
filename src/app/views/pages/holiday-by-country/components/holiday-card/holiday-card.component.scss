@@ -1,0 +1,19 @@
+ion-card {
+  min-width: 90%;
+  margin-bottom: .5rem;
+
+  ion-card-header {
+    padding: 1.5rem;
+
+    ion-card-subtitle {
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  ion-card {
+    min-height: 10rem;
+    width: 20rem;
+  }
+}

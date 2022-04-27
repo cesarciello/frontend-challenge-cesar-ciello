@@ -1,0 +1,22 @@
+<app-country-header></app-country-header>
+
+<ion-content>
+  <main class="home-page">
+    <h3>Select country to list your holidays:</h3>
+
+    <div class="search-input-wrap">
+      <ion-searchbar placeholder="Search..." [(ngModel)]="filteredCountry" animated="true"></ion-searchbar>
+    </div>
+
+    <ion-list *ngIf="countries.length; else isLoading" lines="none">
+      <ion-item *ngFor="let country of countries | filter:filteredCountry">
+        <app-country-card [country]="country"></app-country-card>
+      </ion-item>
+    </ion-list>
+
+    <ng-template #isLoading>
+      <app-spinner-load></app-spinner-load>
+    </ng-template>
+
+  </main>
+</ion-content>

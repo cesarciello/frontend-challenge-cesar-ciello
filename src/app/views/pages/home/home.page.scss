@@ -1,0 +1,28 @@
+main.home-page {
+  padding: 0 1rem;
+
+  .search-input-wrap {
+    padding: 0 0 1rem 0;
+  }
+
+  ion-title {
+    margin-left: 1rem;
+  }
+
+  ion-item {
+    margin-bottom: 1rem;
+
+    app-country-card {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  ion-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+main.holidays-by-country-page {
+  padding: .5rem;
+
+  ion-item {
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {
+  ion-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
